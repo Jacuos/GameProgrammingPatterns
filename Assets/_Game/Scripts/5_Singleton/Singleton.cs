@@ -16,7 +16,7 @@ namespace Singleton
         }
         private static T _instance;
 
-        void Awake()
+        protected void Awake()
         {
             if(_instance == null)
                 _instance = this as T;
