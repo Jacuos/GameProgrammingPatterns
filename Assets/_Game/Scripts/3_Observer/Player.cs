@@ -16,8 +16,8 @@ namespace Observer
 
         void Update()
         {
-            Vector3 dir = Vector3.forward *Input.GetAxis("Vertical");
-            dir += Vector3.right*Input.GetAxis("Horizontal");
+            Vector3 dir = Vector3.forward *Input.GetAxisRaw("Vertical");
+            dir += Vector3.right*Input.GetAxisRaw("Horizontal");
             dir.Normalize();
             transform.position += dir * (speed * Time.deltaTime);
         }
