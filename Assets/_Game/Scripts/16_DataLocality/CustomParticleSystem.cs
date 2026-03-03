@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Game
+namespace DataLocality
 {
     public class CustomParticleSystem : MonoBehaviour
     {
